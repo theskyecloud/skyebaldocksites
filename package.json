@@ -1,5 +1,6 @@
 {
   "name": "skye-baldock-site",
+  "homepage": "http://theskyecloud.github.io/skyebaldocksites",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://theskyecloud.github.io/skyebaldocksites",
   "eslintConfig": {
     "extends": [
       "react-app",
