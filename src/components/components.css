@@ -1,0 +1,53 @@
+.book-page-container {
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    margin-bottom:50px;
+}
+
+.portfolio-image {
+    margin: 10px;
+    float:right;
+    width: 50%;
+    border-radius:5px;
+}
+
+.book-text {
+    margin: 10px;
+    font-size:large;
+    text-align:justify;
+    font-size:100%;
+}
+
+.book-text a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.header-band {
+    width:100%;
+    padding:0;
+    margin:0;
+    margin-bottom:0;
+    align-self: center;
+}
+
+.header-container {
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-logo {
+    height:60px;
+    width:60px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .book-page-container {
+        flex-direction:column;
+    }
+
+    .portfolio-image {
+        width: 90%;
+    }
+}

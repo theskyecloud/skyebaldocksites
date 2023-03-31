@@ -1,0 +1,89 @@
+* {
+  background-color: #f7ebec; 
+}
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-container {
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+.header {
+  margin-top:0;
+  padding-top:1%;
+  background-color: #f7ebec;
+  padding-left:1%;
+  font-size: 80px;
+  font-weight: lighter;
+  width:100%;
+  padding-bottom:0;
+  margin-bottom:0;
+  text-align:center;
+}
+
+.about-text {
+  font-size:large;
+  text-align:justify;
+  width: 45%;
+}
+
+.container {
+  display:flex;
+  max-width: 800px;;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  
+}
+
+.home-container {
+  max-width: 800px;
+  margin: auto;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  font-weight: thick;
+}
+
+.profile-photo {
+  float:right;
+  width: 45%;
+  border-radius:5px;
+}
+
+.bio-p1 {
+  flex:1;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+  .home-container {
+    max-width: 48%;
+    padding:0;
+    overflow-wrap:normal;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text {
+    width:100%;
+  }
+}
+
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {}
