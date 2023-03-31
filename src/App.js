@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/skyebaldocksites" element={<Layout />}>
+        <Route path="/skyebaldocksites/" element={<Layout />}>
           <Route index element={<AboutPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="services" element={<Services />} />
