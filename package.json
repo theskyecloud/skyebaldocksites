@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://theskyecloud.github.io/skyebaldocksites",
   "eslintConfig": {
     "extends": [
       "react-app",
