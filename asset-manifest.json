@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffed3679.css",
+    "main.js": "/static/js/main.0b61c031.js",
+    "static/media/skye-site.png": "/static/media/skye-site.beec23454e42d642846d.png",
+    "static/media/wordpress-site.png": "/static/media/wordpress-site.0e8e2269e0a17a391c49.png",
+    "static/media/profile.jpeg": "/static/media/profile.31aeecc31e455c4d2358.jpeg",
+    "static/media/GreatVibes-Regular.ttf": "/static/media/GreatVibes-Regular.6d246c3b51d7eb58b13a.ttf",
+    "static/media/beach.jpg": "/static/media/beach.c4aff2e4363707389b60.jpg",
+    "static/media/beach2.jpg": "/static/media/beach2.130c56bec6aed5180614.jpg",
+    "static/media/wix-site.png": "/static/media/wix-site.d5fc9ab3b03c2d67d4f8.png",
+    "static/media/logo.png": "/static/media/logo.12a1b12ba6ab59830b4b.png",
+    "index.html": "/index.html",
+    "main.ffed3679.css.map": "/static/css/main.ffed3679.css.map",
+    "main.0b61c031.js.map": "/static/js/main.0b61c031.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffed3679.css",
+    "static/js/main.0b61c031.js"
+  ]
+}
