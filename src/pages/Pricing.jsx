@@ -24,7 +24,7 @@ const Pricing = () => {
 
             <h3>Website hosting</h3>
             <p>
-                You will need to pay for a domain name, for example my domain name is 'www.skyebaldock.com.au', this is usually done through a yearly subscription. If your website uses a development platform, this may be included in that cost. I am paying about $20 a year for the domain name of this site, , but this is another aspect that can vary greatly. This will need to be paid when we launch your site. 
+                You will need to pay for a domain name, this is usually done through a yearly subscription. If your website uses a development platform, this may be included in that cost. I am paying about $15 a year for the domain name of this site, 'skyebaldock.au', but this is another aspect that can vary greatly. This will need to be paid before we can launch your site. 
             </p>
 
             <div className="gap"/>

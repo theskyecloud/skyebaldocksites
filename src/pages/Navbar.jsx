@@ -9,8 +9,9 @@ function Navbar() {
     textDecoration:'none',
     color: 'black',
     fontSize: 20,
-    fontWeight: 'bold',
-    backgroundColor: '#eb5e55',
+    fontWeight: '600',
+    color: '#2d353e',
+    backgroundColor: '#aec3d6',
   };
 
   return (

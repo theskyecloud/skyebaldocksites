@@ -1,10 +1,15 @@
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+}
 
-.navbar-text {
-    color:black;
+.tabs-container {
+    display:flex;
+}
+
+.port-container {
+    display:flex;
+    align-items:center;
 }
 
 .navbar-container {
@@ -16,9 +21,8 @@ body {
     margin:0;
     padding-top:0;
     height:100%;
-    background-color: #eb5e55;
-    border-left: #01172f solid thin;
-    border-radius: 3px;
+    background-color: #aec3d6;
+    border-radius: 5px;
     min-width: 150px;
 }
 
@@ -33,7 +37,7 @@ body {
 .navbar-component {
     padding:15px;
     margin:0px;
-    background-color: #eb5e55;
+    background-color: #aec3d6;
 }
 
 .services {
@@ -63,9 +67,6 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-    .tab {
-        width: 10px;
-        background-color:#01172f;
-    }
+    
 }
 

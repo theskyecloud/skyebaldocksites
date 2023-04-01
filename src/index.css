@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #425365;
 }
 
 code {
@@ -19,11 +20,12 @@ code {
 
 h1 {
   font-family: 'GreatVibes';
-  color: #01172f;
+  color: #425365;
 }
 
 h2 {
   padding-bottom:20px;
+  color: #425365;
 }
 
 p {
