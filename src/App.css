@@ -70,7 +70,7 @@ body {
 
 @media only screen and (max-width: 640px) {
   .home-container {
-    max-width: 48%;
+    max-width: 80%;
     padding:0;
     overflow-wrap:normal;
   }
@@ -82,6 +82,10 @@ body {
 
   .about-text {
     width:100%;
+  }
+
+  .header {
+    font-size:45px;
   }
 }
 

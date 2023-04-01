@@ -68,12 +68,12 @@ function Portfolio() {
     <div className="home-container">
 
       
-    <h2> Example websites </h2>
+      <h2> Example websites </h2>
 
       <div className="port-container">
-        <ArrowButtonLeft onClick={onClickLeft}/>
+        <div className='left-arrow'><ArrowButtonLeft onClick={onClickLeft} className="left-arrow" /></div>
         { pages[pageNum] }
-        <ArrowButtonRight onClick={onClickRight}/>
+        <div className='right-arrow'><ArrowButtonRight onClick={onClickRight}/></div>
       </div>
 
     </div>

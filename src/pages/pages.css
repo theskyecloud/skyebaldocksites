@@ -10,6 +10,7 @@ body {
 .port-container {
     display:flex;
     align-items:center;
+    height:600px;
 }
 
 .navbar-container {
@@ -66,7 +67,41 @@ body {
     height: 30px;
 }
 
+.left-arrow {
+    order:1;
+}
+
+.right-arrow {
+    order:3;
+}
+
 @media only screen and (max-width: 640px) {
-    
+    .port-container {
+        flex-direction:column;
+        height:1000px;
+    }
+
+    .page-container {
+        flex-direction:column-reverse;
+    }
+
+    .navbar-container {
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .left-arrow {
+        order:3;
+        max-width:35%;
+        float:left;
+        padding-right:80%;
+    }
+
+    .right-arrow {
+        order:2;
+        max-width:35%;
+        float:right;
+        padding-left:80%;
+    }
 }
 
