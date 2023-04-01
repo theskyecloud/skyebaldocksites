@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/skyebaldocksites/static/css/main.241333c1.css",
-    "main.js": "/skyebaldocksites/static/js/main.9975cd4c.js",
+    "main.js": "/skyebaldocksites/static/js/main.41563769.js",
     "static/media/skye-site.png": "/skyebaldocksites/static/media/skye-site.224da09c30d53cb724ce.png",
     "static/media/wordpress-site.png": "/skyebaldocksites/static/media/wordpress-site.0e8e2269e0a17a391c49.png",
     "static/media/profile.jpeg": "/skyebaldocksites/static/media/profile.31aeecc31e455c4d2358.jpeg",
@@ -12,10 +12,10 @@
     "static/media/logo.png": "/skyebaldocksites/static/media/logo.caf277ad27cf4fff4bed.png",
     "index.html": "/skyebaldocksites/index.html",
     "main.241333c1.css.map": "/skyebaldocksites/static/css/main.241333c1.css.map",
-    "main.9975cd4c.js.map": "/skyebaldocksites/static/js/main.9975cd4c.js.map"
+    "main.41563769.js.map": "/skyebaldocksites/static/js/main.41563769.js.map"
   },
   "entrypoints": [
     "static/css/main.241333c1.css",
-    "static/js/main.9975cd4c.js"
+    "static/js/main.41563769.js"
   ]
 }
