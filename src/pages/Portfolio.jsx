@@ -35,23 +35,23 @@ function Portfolio() {
 
   const page0 = <PortfolioPage 
   image={require('../images/wordpress-site.png')}
-  desc="This site is a very basic wordpress blog site using the free version of Wordpress. Customisation goes much further with a paid subscription to Wordpress. I designed it with the idea that the owner is an author, and wants to show off their published books, as well as share their thoughts and ideas.  This site includes some classic wordpress features, like a blog that the owner can add to. This kind of site could easily be adapted for photography, art, or any similar pursuit. This site features 2 single purpose pages and a blog. Suggested pricing assumes a subscription and therefore further customisation." 
+  desc="This site was designed for an imaginary author, who wants to show off their published books, as well as share their thoughts and ideas through a blog.  This kind of site could easily be adapted for photography, art, or any similar pursuit. This site uses the free version of Wordpress, customisation can go much further with a paid subscription. " 
   title="A wordpress author's site" 
   link='https://authorpage5.wordpress.com/'
-  price="$80"
+  price="$100"
   />
 
   const page1 = <PortfolioPageReverse 
   image={require('../images/wix-site.png')}
-  desc="This is a wix business template that I've been customising for an imaginary restaurant. It includes a menu, the idea of ordering online, and a map of where the business is located. This kind of site could easily be adapted for any small business. There are 3 multi-purposed customised pages, with styling applied across." 
+  desc="This is a wix business template that I've been customising for an imaginary restaurant. It includes a menu, online booking, and a map to show where the business is located. This kind of site could be adapted for any small business." 
   title="A wix small business site" 
   link="https://skyebaldock1.wixsite.com/super-cool-restauran"
-  price="$100"
+  price="$150"
   />
 
   const page2 = <PortfolioPage
   image={require('../images/skye-site.png')}
-    desc="This site is completely customised and built entirely by me. None of those pesky website builder susbcriptions. Have a look around! This site is 6 singular purpose pages with completely customised styling." 
+    desc="This site is completely customised and built entirely by me. None of those pesky website builder susbcriptions. Have a look around! " 
     title="A custom site - this site!" 
     price="$200"
     link='http://www.skyebaldock.au'

@@ -78,7 +78,7 @@ body {
 @media only screen and (max-width: 640px) {
     .port-container {
         flex-direction:column;
-        height:1000px;
+        height:300%;
     }
 
     .page-container {
