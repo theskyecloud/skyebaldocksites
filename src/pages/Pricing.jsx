@@ -10,7 +10,7 @@ const Pricing = () => {
 
             <h3>My charge</h3>
             <p>
-                I generally try to charge around $35 an hour of work, though I do not charge by the hour. I charge per project. I will give you an initial quote on the information you provide me, and a finalised quote after the designing stage. The price may be greater if you need your website particularly quickly. To get an idea of how much a website might cost, I have provided some simple examples in the Portfolio section with an approximate charge.
+                I charge per project at approximately $35 per hour. I will give you an initial quote on the information you provide me, and a finalised quote after the designing stage. To get an idea of how much a website might cost, I have provided some simple examples in the Portfolio section with an approximate charge.
             </p>
 
             <div className="gap"/>

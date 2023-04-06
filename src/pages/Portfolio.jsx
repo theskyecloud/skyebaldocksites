@@ -43,9 +43,9 @@ function Portfolio() {
 
   const page1 = <PortfolioPageReverse 
   image={require('../images/wix-site.png')}
-  desc="This is a wix business template that I've been customising for an imaginary restaurant. It includes a menu, online booking, and a map to show where the business is located. This kind of site could be adapted for any small business." 
-  title="A wix small business site" 
-  link="https://skyebaldock1.wixsite.com/super-cool-restauran"
+  desc="This is a wix custom small business site. It features a shop and associated features (you cannot currently buy anything as it is not set up for that). This kind of site could be adapted for any small business." 
+  title="A wix small shop site" 
+  link="https://skyebaldock1.editorx.io/fantastic-crystals/shop"
   price="$150"
   />
 
