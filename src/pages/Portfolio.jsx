@@ -41,7 +41,7 @@ function Portfolio() {
   price="$100"
   />
 
-  const page1 = <PortfolioPageReverse 
+  const page2 = <PortfolioPage 
   image={require('../images/wix-site.png')}
   desc="This is a wix custom small business site. It features a shop and associated features (you cannot currently buy anything as it is not set up for that). This kind of site could be adapted for any small business." 
   title="A wix small shop site" 
@@ -49,7 +49,7 @@ function Portfolio() {
   price="$150"
   />
 
-  const page2 = <PortfolioPage
+  const page1 = <PortfolioPageReverse
   image={require('../images/skye-site.png')}
     desc="This site is completely customised and built entirely by me. None of those pesky website builder susbcriptions. Have a look around! " 
     title="A custom site - this site!" 
