@@ -1,7 +1,7 @@
 const ProfilePhoto = () => {
 
     return (
-      <img src={ require('../images/profile.jpeg') } className="profile-photo"/>
+      <img src={ require('../images/profile.jpg') } className="profile-photo"/>
     )
   }
   
