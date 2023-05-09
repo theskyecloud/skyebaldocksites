@@ -7,6 +7,7 @@ import ContactMe from "./pages/ContactMe";
 import Services from "./pages/Services";
 import WebsiteTypes from "./pages/WebsiteTypes";
 import Pricing from "./pages/Pricing";
+import Login from "./pages/Login";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="contactme" element={<ContactMe />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contactme" element={<ContactMe />} />
+          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>

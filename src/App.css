@@ -49,6 +49,7 @@ body {
 
 .home-container {
   max-width: 800px;
+  min-width: 800px;
   margin: auto;
   min-height: 300px;
   padding: 30px;
