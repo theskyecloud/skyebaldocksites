@@ -1,8 +1,6 @@
 import '../App.css';
 import { API, Storage } from 'aws-amplify';
 import React, { useState, useEffect } from "react";
-import "@aws-amplify/ui-react/styles.css";
-import { API } from "aws-amplify";
 import { listNotes } from "../graphql/queries";
 import {
     Button,
