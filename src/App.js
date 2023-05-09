@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import WebsiteTypes from "./pages/WebsiteTypes";
 import Pricing from "./pages/Pricing";
 import Login from "./pages/Login";
+import Order from "./pages/Order";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="contactme" element={<ContactMe />} />
           <Route path="login" element={<Login />} />
+          <Route path="order" element={<Order />} />
         </Route>
       </Routes>
     </BrowserRouter>

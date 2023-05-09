@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "skyebaldockc021f85d": {}
+      },
+      "api": {
+        "skyebaldock": {}
+      },
+      "storage": {
+        "imagestorage": {}
       }
     }
   }

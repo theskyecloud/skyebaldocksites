@@ -24,6 +24,7 @@ function Navbar() {
             <div className="navbar-component"><Link style={linkStyle} to="/pricing">Pricing</Link></div>
             <div className="navbar-component"><Link style={linkStyle} to="/portfolio">Portfolio</Link></div>
             <div className="navbar-component"><Link style={linkStyle} to="/contactme">Contact Me</Link></div>
+            <div className="navbar-component"><Link style={linkStyle} to="/order">Place an order</Link></div>
         </div>
       </nav>
   );
