@@ -7,13 +7,10 @@ function ContactMe() {
       <h2>Contact me!</h2>
       <h3>Reach out to me via email at</h3>
       <h4>skyebaldock.sites@gmail.com</h4>
+      <h3>Or give me a call on</h3>
+      <h4>0490 480 887</h4>
 
     <div className="gap"></div>
-      <p>If you want to get off to a quick start, include the following information:</p>
-      <p>  -  which service you are after, from the Services page</p>
-      <p>  -  the purpose of your website</p>
-      <p>  -  which platform you think fits best, from the Website Types page</p>
-      <p>  -  when you need it done by</p>
 
     </div>
   );

@@ -11,5 +11,5 @@ export { default as PostCreateForm } from "./PostCreateForm";
 export { default as PostUpdateForm } from "./PostUpdateForm";
 export { default as CommentCreateForm } from "./CommentCreateForm";
 export { default as CommentUpdateForm } from "./CommentUpdateForm";
-export { default as NoteCreateForm } from "./NoteCreateForm";
-export { default as NoteUpdateForm } from "./NoteUpdateForm";
+export { default as OrderCreateForm } from "./OrderCreateForm";
+export { default as OrderUpdateForm } from "./OrderUpdateForm";

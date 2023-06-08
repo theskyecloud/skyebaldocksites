@@ -1,128 +1,104 @@
 import '../App.css';
 import { API, Storage } from 'aws-amplify';
 import React, { useState, useEffect } from "react";
-import { listNotes } from "../graphql/queries";
+import { listOrders } from "../graphql/queries";
 import {
     Button,
     Flex,
-    Heading,
-    Image,
-    Text,
     TextField,
+    TextAreaField,
     View,
   } from '@aws-amplify/ui-react';
 import {
-  createNote as createNoteMutation,
-  deleteNote as deleteNoteMutation,
+  createOrder as createOrderMutation,
+  deleteOrder as deleteOrderMutation,
 } from "../graphql/mutations";
+import Request from "../components/Request";
 
 
 function Order() {
-    const [notes, setNotes] = useState([]);
+    const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetchNotes();
+        fetchOrders();
     }, []);
 
-    async function fetchNotes() {
-        const apiData = await API.graphql({ query: listNotes });
-        const notesFromAPI = apiData.data.listNotes.items;
-        await Promise.all(
-            notesFromAPI.map(async (note) => {
-            if (note.image) {
-                const url = await Storage.get(note.name);
-                note.image = url;
-            }
-        return note;
-        })
-        );
-        setNotes(notesFromAPI);
+    async function fetchOrders() {
+        const apiData = await API.graphql({ query: listOrders });
+        const ordersFromAPI = apiData.data.listOrders.items;
+        setOrders(ordersFromAPI);
     }
 
-    async function createNote(event) {
+    async function createOrder(event) {
         event.preventDefault();
         const form = new FormData(event.target);
-        const image = form.get("image");
         const data = {
-            name: form.get("name"),
-            description: form.get("description"),
-            image: image.name,
+            name: form.get("email"),
+            description: form.get("subject"),
+            email: form.get("content"),
         };
-        if (!!data.image) await Storage.put(data.name, image);
         await API.graphql({
-            query: createNoteMutation,
+            query: createOrderMutation,
             variables: { input: data },
         });
-        fetchNotes();
+        fetchOrders();
         event.target.reset();
     }
 
-    async function deleteNote({ id, name }) {
-        const newNotes = notes.filter((note) => note.id !== id);
-        setNotes(newNotes);
+    async function deleteOrder({ id, name }) {
+        const newOrders = orders.filter((order) => order.id !== id);
+        setOrders(newOrders);
         await Storage.remove(name);
         await API.graphql({
-            query: deleteNoteMutation,
+            query: deleteOrderMutation,
             variables: { input: { id } },
         });
     }
 
   return (
       <div className="home-container">
+
+        <h2>Submit an order request</h2>
+        <h3>Contact me through the form below. </h3>
         
-        <View as="form" margin="3rem 0" onSubmit={createNote}>
-        <Flex direction="row" justifyContent="center">
+        <View as="form" margin="3rem 0" onSubmit={createOrder}>
+        <Flex direction="column" justifyContent="center">
           <TextField
-            name="name"
-            placeholder="Note Name"
-            label="Note Name"
-            labelHidden
+            name="email"
+            placeholder="example@email.com"
+            label="Your email"
             variation="quiet"
             required
           />
           <TextField
-            name="description"
-            placeholder="Note Description"
-            label="Note Description"
-            labelHidden
+            name="subject"
+            placeholder="Subject"
+            label="Subject"
             variation="quiet"
             required
           />
-          <View
-            name="image"
-            as="input"
-            type="file"
-            style={{ alignSelf: "end" }}
-            />
+          <TextAreaField
+            name="content"
+            placeholder="The content"
+            label="Content"
+            variation="quiet"
+            required
+          />
           <Button type="submit" variation="primary">
-            Create Note
+            Send
           </Button>
         </Flex>
       </View>
-      <Heading level={2}>Current Notes</Heading>
-      <View margin="3rem 0">
-      {notes.map((note) => (
-        <Flex
-            key={note.id || note.name}
-            direction="row"
+      <h2>Your communications</h2>
+      <View marginBottom="200px">
+      <Flex
+            direction="column"
             justifyContent="center"
             alignItems="center"
-        >
-            <Text as="strong" fontWeight={700}>
-            {note.name}
-            </Text>
-            <Text as="span">{note.description}</Text>
-            {note.image && (
-            <Image
-                src={note.image}
-                alt={`visual aid for ${notes.name}`}
-                style={{ width: 400 }}
-            />
-            )}
-            <Button variation="link" onClick={() => deleteNote(note)}>
-            Delete note
-            </Button>
-        </Flex>
+            marginBottom="15px"
+      ></Flex>
+      {orders.map((order) => (
+        <Request order={order} deleteOrder={deleteOrder} />
         ))}
       </View>
 

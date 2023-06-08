@@ -4,11 +4,8 @@ import Layout from "./pages/Layout";
 import AboutPage from "./pages/AboutPage";
 import Portfolio from "./pages/Portfolio";
 import ContactMe from "./pages/ContactMe";
-import Services from "./pages/Services";
-import WebsiteTypes from "./pages/WebsiteTypes";
-import Pricing from "./pages/Pricing";
-import Login from "./pages/Login";
-import Order from "./pages/Order";
+import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
 
 function App() {
 
@@ -19,14 +16,9 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<AboutPage />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="services" element={<Services />} />
-          <Route path="websitetypes" element={<WebsiteTypes />} />
-          <Route path="pricing" element={<Pricing />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="experience" element={<Experience />} />
           <Route path="contactme" element={<ContactMe />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="contactme" element={<ContactMe />} />
-          <Route path="login" element={<Login />} />
-          <Route path="order" element={<Order />} />
         </Route>
       </Routes>
     </BrowserRouter>

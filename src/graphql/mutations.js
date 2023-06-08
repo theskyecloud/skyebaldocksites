@@ -259,46 +259,46 @@ export const deleteComment = /* GraphQL */ `
     }
   }
 `;
-export const createNote = /* GraphQL */ `
-  mutation CreateNote(
-    $input: CreateNoteInput!
-    $condition: ModelNoteConditionInput
+export const createOrder = /* GraphQL */ `
+  mutation CreateOrder(
+    $input: CreateOrderInput!
+    $condition: ModelOrderConditionInput
   ) {
-    createNote(input: $input, condition: $condition) {
+    createOrder(input: $input, condition: $condition) {
       id
-      name
-      description
-      image
+      email
+      subject
+      content
       createdAt
       updatedAt
     }
   }
 `;
-export const updateNote = /* GraphQL */ `
-  mutation UpdateNote(
-    $input: UpdateNoteInput!
-    $condition: ModelNoteConditionInput
+export const updateOrder = /* GraphQL */ `
+  mutation UpdateOrder(
+    $input: UpdateOrderInput!
+    $condition: ModelOrderConditionInput
   ) {
-    updateNote(input: $input, condition: $condition) {
+    updateOrder(input: $input, condition: $condition) {
       id
-      name
-      description
-      image
+      email
+      subject
+      content
       createdAt
       updatedAt
     }
   }
 `;
-export const deleteNote = /* GraphQL */ `
-  mutation DeleteNote(
-    $input: DeleteNoteInput!
-    $condition: ModelNoteConditionInput
+export const deleteOrder = /* GraphQL */ `
+  mutation DeleteOrder(
+    $input: DeleteOrderInput!
+    $condition: ModelOrderConditionInput
   ) {
-    deleteNote(input: $input, condition: $condition) {
+    deleteOrder(input: $input, condition: $condition) {
       id
-      name
-      description
-      image
+      email
+      subject
+      content
       createdAt
       updatedAt
     }
