@@ -15,13 +15,13 @@ const Layout = () => {
       </Container>
       <Nav className='justify-content-end footer' as="ul">
         <Nav.Item as="li">
-          <Nav.Link href="https://www.linkedin.com/in/skye-baldock-04aa53200/">LinkedIn</Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/in/skye-baldock-04aa53200/" style={{ color: 'navy' }} >LinkedIn</Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link href='https://www.facebook.com/skye.baldock.7/'>Facebook</Nav.Link>
+          <Nav.Link href='https://www.facebook.com/skye.baldock.7/' style={{ color: 'navy' }}>Facebook</Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link href='https://www.instagram.com/thesecretskyeaccount/'>Instagram</Nav.Link>
+          <Nav.Link href='https://www.instagram.com/thesecretskyeaccount/' style={{ color: 'navy' }}>Instagram</Nav.Link>
         </Nav.Item>
       </Nav>
       
