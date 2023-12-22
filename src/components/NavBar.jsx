@@ -16,12 +16,10 @@ const NavBar = () => {
     <>
       <Navbar className="bg-body-secondary">
       <Container>
-        <Navbar.Brand onClick={() => navigate('/')}><h1>Skye Baldock</h1></Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate('/')} style={{ '&:hover': { cursor: 'pointer' } }} ><h1>Skye Baldock</h1></Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
-            <Nav.Link onClick={() => navigate('/')}>Home</Nav.Link>
-            <Nav.Link onClick={() => navigate('/about')}>About</Nav.Link>
             <NavDropdown title='Portfolio'>
               <NavDropdown.Item onClick={() => navigate('/excel')}>Microsoft Excel</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate('/')}>SQL</NavDropdown.Item>
