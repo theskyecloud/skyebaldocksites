@@ -1,94 +1,73 @@
-* {
-  background-color: #f5f4f0; 
+.App {
+  text-align: center;
 }
 
-body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+@font-face {
+  font-family: 'GreatVibes';
+  src: local('GreatVibes-Regular'), url('fonts/Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
+} 
 
-.header-container {
-  display:flex;
-  flex-direction:column;
-  align-items:stretch;
+h1 {
+  font-family: 'GreatVibes';
   padding:0;
   margin:0;
-  width:100%;
 }
 
-.header {
-  margin-top:0;
-  padding-top:1%;
-  background-color: #f5f4f0;
-  padding-left:1%;
-  font-size: 80px;
-  font-weight: lighter;
-  width:100%;
-  padding-bottom:0;
-  margin-bottom:0;
-  text-align:center;
+.main-page {
+  padding-top: 7vh;
 }
 
-.about-text {
-  font-size:large;
-  text-align:justify;
-  width: 45%;
+.flex {
+  display: flex;
+  align-items: center;
 }
 
-.container {
-  display:flex;
-  max-width: 800px;;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  padding: 30px;
-  border-radius: 5px;
-  align-items:flex-start;
-  flex-wrap:wrap;
-  
-}
-
-.home-container {
-  max-width: 800px;
-  min-width: 800px;
-  margin: auto;
-  min-height: 300px;
-  padding: 30px;
-  border-radius: 5px;
-  font-weight: thick;
-}
-
-.profile-photo {
-  float:right;
-  width: 45%;
-  border-radius:5px;
-}
-
-.bio-p1 {
-  flex:1;
-}
-
-
-
-@media only screen and (max-width: 640px) {
-  .home-container {
-    max-width: 80%;
-    padding:0;
-    overflow-wrap:normal;
-  }
-
-  .about-container {
-    display: flex;
+@media (max-width: 1000px) {
+  .flex {
     flex-direction: column;
   }
+}
 
-  .about-text {
-    width:100%;
-  }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
-  .header {
-    font-size:45px;
+.scroll-menu {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px;
+  margin: 10px;
+  border: grey thing solid;
+  margin-bottom: 10%;
+}
+
+.profile-img {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .profile-img {
+    max-width: 80%;
   }
 }
 
+@media (min-width: 1000px) {
+  .profile-img {
+    margin-left: 10vw;
+  }
+}
 
-@media only screen and (min-width: 640px) and (max-width: 1024px) {}
+p {
+  text-align: justify;
+  max-width: 100%;
+}
+
+.footer {
+  bottom: 0;
+  top: auto;
+  margin-top: 20px;
+}
+

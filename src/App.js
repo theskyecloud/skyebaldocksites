@@ -1,24 +1,21 @@
-import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import AboutPage from "./pages/AboutPage";
-import Portfolio from "./pages/Portfolio";
-import ContactMe from "./pages/ContactMe";
-import Skills from "./pages/Skills";
-import Experience from "./pages/Experience";
+import Home from './pages/Home';
+import About from './pages/About';
+import Layout from './pages/Layout';
+import Excel from './pages/Excel';
+import Overland from './pages/Overland';
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<AboutPage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="experience" element={<Experience />} />
-          <Route path="contactme" element={<ContactMe />} />
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path='excel' element={<Excel />} />
+          <Route path='overland' element={<Overland />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -26,3 +23,4 @@ function App() {
 }
 
 export default App;
+
