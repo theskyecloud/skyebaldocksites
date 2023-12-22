@@ -1,9 +1,10 @@
 import ScrollMenu from '../components/ScrollMenu';
+import About from './About';
 
 const Home = () => {
   return (
     <>
-      <h2 style={{marginBottom: '10%'}}>Hola</h2>
+      <About style={{marginBottom: '10%'}} />
       <ScrollMenu
         title='Recent Projects'
         cardContents={ [
