@@ -16,7 +16,7 @@ const NavBar = () => {
     <>
       <Navbar className="bg-body-secondary">
       <Container>
-        <Navbar.Brand onClick={() => navigate('/')} style={{ '&hover': { cursor: 'pointer' } }} ><h1>Skye Baldock</h1></Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate('/')} style={{ ':hover': { cursor: 'pointer' } }} ><h1>Skye Baldock</h1></Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
