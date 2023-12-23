@@ -13,8 +13,8 @@ const ScrollMenu = ({ title, cardContents }) => {
       <div className='scroll-menu'>
       {
         cardContents.map((card) => {
-          return <Button id={card.title} onClick={() => navigate(card.nav)} variant='outline-secondary' style={{ marginRight: '20px', ':hover': {backgroundColor: '#ECECEC'}}}>
-            <Card style={{ width: '18rem', border: 'none', backgroundColor: 'none', ':hover' : { backgroundColor: '#ECECEC' } }}>
+          return <Button id={card.title} onClick={() => navigate(card.nav)} variant='outline-secondary' style={{ marginRight: '20px', '&:hover': {backgroundColor: '#ECECEC'}}}>
+            <Card style={{ width: '18rem', border: 'none', backgroundColor: 'none', '&:hover' : { backgroundColor: '#ECECEC' } }}>
               <Card.Img variant='top' src={card.image} />
               <Card.Body>
                 <Card.Title>{ card.title }</Card.Title>
