@@ -9,6 +9,12 @@ const Home = () => {
         title='Recent Projects'
         cardContents={ [
           {
+            title: 'Data Analysis with Tableau',
+            text: 'I created a small dashboard in Tableau Public. Click here to see more.',
+            image: require('../images/tableau.png'),
+            nav: '/tableau'
+          },
+          {
             title:'Data Analysis with Excel',
             text: 'I completed a small project in Microsoft Excel. Check it out here.',
             image: require('../images/excel.png'),
