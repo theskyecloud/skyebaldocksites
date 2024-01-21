@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 import Excel from './pages/Excel';
-import Excel from './pages/PowerBI';
+import PowerBI from './pages/PowerBI';
 import Tableau from './pages/Tableau';
 import Overland from './pages/Overland';
 
