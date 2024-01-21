@@ -9,6 +9,12 @@ const Home = () => {
         title='Recent Projects'
         cardContents={ [
           {
+            title: 'Data Analysis with Power BI',
+            text: 'I built a simple dashboard in Power BI, using Python to help clean the data. Click to read more.',
+            image: require('../images/powerbi.png'),
+            nav: '/powerbi'
+          },
+          {
             title: 'Data Analysis with Tableau',
             text: 'I created a small dashboard in Tableau Public. Click here to see more.',
             image: require('../images/tableau.png'),

@@ -25,7 +25,7 @@ const NavBar = () => {
               <NavDropdown.Item onClick={() => navigate('/')}>SQL</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate('/')}>Python</NavDropdown.Item>
               <NavDropdown.Item onClick={() => navigate('/tableau')}>Tableau</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => navigate('/')}>PowerBI</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate('/powerbi')}>PowerBI</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link onClick={() => navigate('/overland')}>Overland Track</Nav.Link>
           </Nav>
