@@ -41,7 +41,7 @@ const Home = () => {
           {
             title:'Property App with Vanilla JS',
             text: 'A frontend project to create an airbnb-like app with vanilla javascript.',
-            image: require('../content/airbrb1.png'),
+            image: require('../content/airbrb.png'),
             nav: '/airbrb'
           },
           {
