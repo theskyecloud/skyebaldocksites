@@ -1,3 +1,4 @@
+import Image from 'react-bootstrap/Image';
 
 const CanvaProject = () => {
   return (
