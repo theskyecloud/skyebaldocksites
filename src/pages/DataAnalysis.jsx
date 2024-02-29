@@ -13,6 +13,7 @@ const DataAnalysis = () => {
           width="100%"
           height="600"
           frameborder="0"
+          marginBottom='50px'
         />
       </div>
       <div marginBottom='20px' >
@@ -24,6 +25,7 @@ const DataAnalysis = () => {
           src={ require('../content/data-professionals-survey-dashboard.jpg') }
           width="100%"
           min-height="600"
+          marginBottom='50px'
         />
       </div>
       <div marginBottom='20px' >
@@ -35,6 +37,7 @@ const DataAnalysis = () => {
           src={ require('../content/tasmania-airbnb-dashboard.jpg') }
           width="100%"
           min-height="600"
+          marginBottom='50px'
         />
       </div>
     </>
